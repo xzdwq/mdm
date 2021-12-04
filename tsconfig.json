@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "noLib": false,
+    "lib": ["es7"],
+    "allowJs": true,
+    "paths": {
+      "@cfg/*": ["configuration/*"],
+      "@src/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "configuration/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
